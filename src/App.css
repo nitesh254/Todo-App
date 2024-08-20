@@ -1,38 +1,117 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #066acd;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: 'Abel';
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-1 {
+  display: flex;
+  /* height: 80vh; */
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-top: 100px;
+  background: #fff;  
 }
+
+.container-2 {
+  display: flex;
+  max-height: 340px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  width: 450px;
+  background: #fff; /* Adjust the opacity here */
+  overflow-y: scroll;
+  overflow-x: hidden; 
+}
+
+
+
+.todoForm {
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
+}
+
+input {
+  width: 80%;
+  padding: 10px; 
+  border: 2px solid black;
+}
+
+button {
+  border: none;
+    padding: 10px;
+    /* border-radius: 20px; */
+    margin: 0 5px;
+    background: white;
+    font-family: 'Abel';
+    font-weight: 600;
+}
+
+.allTodos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.singleTodo {
+  margin: 10px 0;
+    background-color: #066acd;
+    padding: 10px 20px;
+    display: flex;
+    width: 410px;
+    align-items: center;
+    color: white;
+}
+.todoText {
+  flex: 1; 
+  font-family: 'Abel';
+  font-size: 17px;
+}
+
+.submit {
+  border: none;
+    padding: 10px;
+    border-radius: 0px;
+    /* margin: 0 5px; */
+    background: #066acd;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px; /* Set the desired width here */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Customize the track background */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Customize the handle color */
+  border-radius: 0px; /* Make the handle rounded if desired */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
